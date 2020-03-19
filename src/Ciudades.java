@@ -26,7 +26,7 @@ public class Ciudades {
 		//Fase2
 		
 		String[] arrayCities = {city1,city2,city3,city4,city5,city6};
-		
+		     //ORDENNADO ARRAY
 		Arrays.sort(arrayCities);
 		
 		System.out.println(Arrays.toString(arrayCities));
@@ -34,11 +34,11 @@ public class Ciudades {
 		
 		// Fase3
 		
-		String [] arrayCitiesModified= new String[arrayCities.length];
+		String [] arrayCitiesModified = new String[arrayCities.length];
 		int counter = 0;
 		
 		for (String city : arrayCities) {
-			
+			// remplazando en cada posiscion el String con caracter cambiado
 			arrayCitiesModified [counter]= city.replace('a', '4').replace('A','4');
 			counter++;
 		}
@@ -47,6 +47,7 @@ public class Ciudades {
 		
 		//Fase4
 		
+				// Creando arrays de caracteres para cada ciudad
 		char[] arrayCity1= new char[arrayCities[0].length()];
 		char[] arrayCity2= new char[arrayCities[1].length()];
 		char[] arrayCity3= new char[arrayCities[2].length()];
@@ -54,11 +55,13 @@ public class Ciudades {
 		char[] arrayCity5= new char[arrayCities[4].length()];
 		char[] arrayCity6= new char[arrayCities[5].length()];
 		
+			//llenando cada uno de los arrays con las letras de la ciudad
+		
 		for (int i=0; i<arrayCity1.length;i++) {
 			arrayCity1[i]=arrayCities[0].charAt(i);	
 		}
 		System.out.println(Arrays.toString(arrayCity1));
-		// invirtiendo el string haciendo uso de la clase stringBuilder
+		// invirtiendo el string de una posicion del array de ciudades haciendo uso de la clase stringBuilder
 				String invert1 = new StringBuilder (arrayCities[0]).reverse().toString();
 				System.out.println(invert1);
 		
@@ -68,7 +71,7 @@ public class Ciudades {
 			arrayCity2[i]=arrayCities[1].charAt(i);
 		}
 		System.out.println(Arrays.toString(arrayCity2));
-		// invirtiendo el string haciendo uso de la clase stringBuilder
+		// invirtiendo 
 				String invert2 = new StringBuilder (arrayCities[1]).reverse().toString();
 				System.out.println(invert2);
 		
@@ -77,7 +80,7 @@ public class Ciudades {
 			arrayCity3[i]=arrayCities[2].charAt(i);
 		}
 		System.out.println(Arrays.toString(arrayCity3));
-		// invirtiendo el string haciendo uso de la clase stringBuilder
+		// invirtiendo 
 				String invert3 = new StringBuilder (arrayCities[2]).reverse().toString();
 				System.out.println(invert3);
 		
@@ -86,7 +89,7 @@ public class Ciudades {
 			arrayCity4[i]=arrayCities[3].charAt(i);
 		}
 		System.out.println(Arrays.toString(arrayCity4));
-		// invirtiendo el string haciendo uso de la clase stringBuilder
+		// invirtiendo 
 		String invert4 = new StringBuilder (arrayCities[3]).reverse().toString();
 		System.out.println(invert4);
 		
@@ -95,7 +98,7 @@ public class Ciudades {
 			arrayCity5[i]=arrayCities[4].charAt(i);
 		}
 		System.out.println(Arrays.toString(arrayCity5));
-		// invirtiendo el string haciendo uso de la clase stringBuilder
+		// invirtiendo 
 		String invert5 = new StringBuilder (arrayCities[4]).reverse().toString();
 		System.out.println(invert5);
 		
@@ -104,7 +107,7 @@ public class Ciudades {
 			arrayCity6[i]=arrayCities[5].charAt(i);
 		}
 		System.out.println(Arrays.toString(arrayCity6));
-		// invirtiendo el string haciendo uso de la clase stringBuilder
+		// invirtiendo 
 		String invert6 = new StringBuilder (arrayCities[05]).reverse().toString();
 		System.out.println(invert6);
 		
